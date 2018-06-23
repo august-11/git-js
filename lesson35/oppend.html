@@ -7,11 +7,17 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
-    var newDiv = document.createElement("div");
-    var newContent = document.createTextNode("Hello");
-    newDiv.appendChild(newContent);
+    <ul id="list"></ul>
     
+    <script>
+    var oul = document.getElementById("list");
+    var oli = document.createElement("li");
+    var oli2 = oli.cloneNode(true);
+    
+        oli.innerText = "2";
+        oli2.innerText = "1";
+    oul.appendChild(oli2);
+    oul.appendChild(oli);
     </script>
 </body>
 </html>
