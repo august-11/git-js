@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="list"></ul>
+    
+    <script>
+    var oul = document.getElementById("list");
+    var oli = document.createElement("li");
+    var oli2 = oli.cloneNode(true);
+    
+        oli.innerText = "2";
+        oli2.innerText = "1";
+    oul.appendChild(oli2);
+    oul.appendChild(oli);
+    </script>
+</body>
+</html>

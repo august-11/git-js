@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn"></button>
+    <input id="inp" />
+    <p id="demo"></p>
+    <script>
+        /*第一种数组+map()*/
+   /* var btna = document.getElementById("btn");
+    btna.addEventListener("click",function(){
+        var inpt = document.getElementById("inp").Value;
+        var inpa = "";
+        inpa = inpt.toLowerCase().split(/\s+/).map(function(a){
+            return a.slice(0,1).toUpperCase()+a.slice(1);
+        }).join("");
+        document.getElementById("demo").innerHTML = inpa;
+    });*/
+    /*第二种正则*/
+    var btn = btn;
+    btn.addEventListener("click",function(){
+        var inpa = document.getElementById("inp").Value;
+        var inpt = "";
+        inpt = inpa.replace(/\b\w+\b/g, function(word){
+            return word.substring(0,1).toUpperCase()+word.substring(1);
+         })
+         document.getElementById("demo").innerHTML = inpt;
+    })
+   
+
+    </script>
+</body>
+</html>
